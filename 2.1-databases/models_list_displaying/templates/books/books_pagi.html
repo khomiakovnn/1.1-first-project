@@ -15,12 +15,7 @@
             </div>
             {% endfor %}
         </div>
-        {% if page.has_previous %}
-            <a class="button button-primary" href="?page={{ page.previous_page_number }}">⟵</a>
-        {% endif %}
-        <a class="button disabled" href="">{{ page.number }}</a>
-        {% if page.has_next %}
-            <a class="button button-primary" href="?page={{ page.next_page_number }}">⟶</a>
-        {% endif %}
+            <a href="/books/{{ date_before }}">⟵ {{ date_before }} &nbsp</a>
+            <a href="/books/{{ date_after }}">&nbsp {{ date_after }} ⟶</a>
     </div>
 {% endblock %}
