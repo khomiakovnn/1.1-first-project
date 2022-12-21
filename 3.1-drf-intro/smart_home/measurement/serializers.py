@@ -26,4 +26,4 @@ class SensorShortSerializer(serializers.ModelSerializer):
 class MeasureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Measurement
-        fields = ['sensor', 'temperature', 'measure_date', ]
+        fields = ['sensor', 'temperature', 'measure_date', 'image']

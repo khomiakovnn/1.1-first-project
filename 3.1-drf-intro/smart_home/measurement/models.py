@@ -10,3 +10,4 @@ class Measurement(models.Model):
     sensor = models.ForeignKey(Sensor, on_delete=models.CASCADE, related_name='measures')
     temperature = models.DecimalField(decimal_places=2, max_digits=5)
     measure_date = models.DateField(auto_now=True)
+    image = models.ImageField(null=True)

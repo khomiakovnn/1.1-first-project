@@ -37,5 +37,6 @@ class MeasureView(ListAPIView):
     def post(self, request):
         sensor = Sensor.objects.get(id=request.POST.get('sensor'))
         temperature = request.POST.get('temperature')
-        Measurement(sensor=sensor, temperature=temperature).save()
+        image = request.POST.get('image')
+        Measurement(sensor=sensor, temperature=temperature, image=image).save()
         return Response(f"Данные датчика '{request.POST['sensor']}' получены")
