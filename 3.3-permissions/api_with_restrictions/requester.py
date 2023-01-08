@@ -55,5 +55,5 @@ if __name__ == '__main__':
     # Функции работы с объявлениями
     # make_adv(token_user1, 'XXXX', 'WWWWW')  # Создать объявление
     # show_adv(15)  # Показать объявление
-    # del_adv(token_user1, 10)  # Удалить объявление
-    # update_adv(token_user1, 11, 'Меняем', 'Закрываем', 'CLOSED')  # Изменить объявление
+    # del_adv(token_admin, 12)  # Удалить объявление
+    # update_adv(token_admin, 11, 'Меняем', 'Админ', 'CLOSED')  # Изменить объявление
