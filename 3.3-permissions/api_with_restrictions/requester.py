@@ -32,6 +32,7 @@ def del_adv(token, adv_id):
     print(response.text)
     print(response.status_code)
 
+
 def update_adv(token, adv_id, title, description, status):
     href = 'http://127.0.0.1:8000/api/advertisements/' + str(adv_id) + '/'
     headers = {
@@ -53,7 +54,7 @@ if __name__ == '__main__':
     token_user2 = '81171a1ba4da71a02d8b81f69fd05976cbc5d4f4'
 
     # Функции работы с объявлениями
-    # make_adv(token_user1, 'XXXX', 'WWWWW')  # Создать объявление
+    # make_adv(token_user2, 'XXXX', 'WWWWW')  # Создать объявление
     # show_adv(15)  # Показать объявление
     # del_adv(token_admin, 12)  # Удалить объявление
-    # update_adv(token_admin, 11, 'Меняем', 'Админ', 'CLOSED')  # Изменить объявление
+    # update_adv(token_user1, 12, 'Меняем', 'Админ2', 'CLOSED')  # Изменить объявление
